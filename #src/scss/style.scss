@@ -131,7 +131,7 @@ p{
 input{
     width: 562px;
     height: 66px;
-    padding: 0 152px 0 32px;
+    padding: 0 32px;
     border-radius: 8px;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
@@ -228,6 +228,18 @@ input::placeholder{
         font-weight: 300;
     }
 }
+textarea{
+    max-width: 562px;
+    min-width: 562px;
+    height: 155px;
+    min-height: 55px;
+    border-radius: 8px;
+
+    font-size: 16px;
+    padding: 18px 28px;
+
+    margin-bottom: 20px;
+}
 
 
 @media screen and(max-width: 1440px){
@@ -253,6 +265,10 @@ input::placeholder{
     .sub-input{
         width: 500px;
     }
+    textarea{
+        max-width: 500px;
+        min-width: 500px;
+    }
 }
 
 @media screen and(max-width: 1240px){
@@ -261,6 +277,10 @@ input::placeholder{
     }
     .sub-input, input, .input-wrong-content, .input-success-content{
         width: 100% !important;
+    }
+    textarea{
+        max-width: 100%;
+        min-width: 100%;
     }
     .sub-contant-img{
         display: block;
@@ -278,7 +298,7 @@ input::placeholder{
     }
     .input{
         height: 55px;
-        padding: 0 130px 0 16px;
+        padding: 0 16px;
     }
     .btn-input{
         font-size: 16px;
@@ -326,7 +346,7 @@ input::placeholder{
 
 
 .header{
-    height: 72px;
+    height: 82px;
     border-bottom: 1px solid #E5E9F2; 
     align-items: center;   
 
@@ -334,24 +354,24 @@ input::placeholder{
     
 }
 .logo img{
-    width: 90px;
+    height: 78px;
 }
 
 @media screen and(max-width: 768px){
     .header{
-        height: 54px;
+        height: 64px;
     }
     .logo img{
-        width: 60px;
+        height: 60px;
     }
 }
 
 
 
 //about
-.about{
-    margin-bottom: -400px;
-}
+// .about{
+//     margin-bottom: -400px;
+// }
 
 .about-header{
     max-width: 1000px;
@@ -366,6 +386,9 @@ input::placeholder{
     margin: 0 auto 45px;
 }
 
+.about-video-container{
+    background: url('../img/black-circle.png') 0 100% / 100% 50% no-repeat;
+}
 .about-video{
     position: relative;
     width: 100%;
@@ -456,12 +479,10 @@ input::placeholder{
 
 .more{
     background: var(--lighter);
-    padding: 20% 0 0;
 }
 .more-content{
     display: flex;
-    margin: 52px 0 0;
-    padding: 0 125px 80px 0;
+    padding: 52px 125px 80px 0;
 }
 .more-logo{
     align-self: start;
@@ -477,7 +498,7 @@ input::placeholder{
 
     }
     .more-content{
-        padding: 0 75px 50px 0;
+        padding: 52px 75px 50px 0;
     }
     .more-logo{
         width: 120px;
@@ -491,7 +512,7 @@ input::placeholder{
 
 @media screen and(max-width: 768px){
     .more-content{
-        padding: 0 0 40px 0;
+        padding: 38px 0 40px 0;
     }
     .more-logo{
         width: 90px;
@@ -504,7 +525,6 @@ input::placeholder{
     
     .more-content{
         display: block;
-        margin: 42px 0 0;
     }
     .more-text{
         padding: 0;
@@ -609,11 +629,10 @@ input::placeholder{
     margin-bottom: 20px;
 }
 .sub-input-btn{
-    position: absolute;
-    right: 8px;
-
-    top: calc(50% - 25px);
+    float: right;
+    margin-bottom: 20px;
 }
+
 
 
 @media screen and(max-width: 768px){

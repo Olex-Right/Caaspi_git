@@ -218,7 +218,7 @@ p {
 input {
   width: 562px;
   height: 66px;
-  padding: 0 152px 0 32px;
+  padding: 0 32px;
   border-radius: 8px;
   font-size: 16px;
   font-family: 'Inter', sans-serif;
@@ -342,8 +342,19 @@ input::placeholder {
   font-weight: 300;
 }
 
+textarea {
+  max-width: 562px;
+  min-width: 562px;
+  height: 155px;
+  min-height: 55px;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 18px 28px;
+  margin-bottom: 20px;
+}
+
 .header {
-  height: 72px;
+  height: 82px;
   border-bottom: 1px solid #E5E9F2;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -354,11 +365,7 @@ input::placeholder {
 }
 
 .logo img {
-  width: 90px;
-}
-
-.about {
-  margin-bottom: -400px;
+  height: 78px;
 }
 
 .about-header {
@@ -372,6 +379,10 @@ input::placeholder {
   font-size: 24px;
   line-height: 140%;
   margin: 0 auto 45px;
+}
+
+.about-video-container {
+  background: url("../img/black-circle.png") 0 100%/100% 50% no-repeat;
 }
 
 .about-video {
@@ -436,15 +447,13 @@ input::placeholder {
 
 .more {
   background: var(--lighter);
-  padding: 20% 0 0;
 }
 
 .more-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 52px 0 0;
-  padding: 0 125px 80px 0;
+  padding: 52px 125px 80px 0;
 }
 
 .more-logo {
@@ -522,9 +531,8 @@ input::placeholder {
 }
 
 .sub-input-btn {
-  position: absolute;
-  right: 8px;
-  top: calc(50% - 25px);
+  float: right;
+  margin-bottom: 20px;
 }
 
 .footer {
@@ -578,8 +586,13 @@ input::placeholder {
     width: 500px;
   }
 
+  textarea {
+    max-width: 500px;
+    min-width: 500px;
+  }
+
   .more-content {
-    padding: 0 75px 50px 0;
+    padding: 52px 75px 50px 0;
   }
 
   .more-logo {
@@ -606,6 +619,11 @@ input::placeholder {
   .input-wrong-content,
   .input-success-content {
     width: 100% !important;
+  }
+
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
   }
 
   .sub-contant-img {
@@ -648,7 +666,7 @@ input::placeholder {
 
   .input {
     height: 55px;
-    padding: 0 130px 0 16px;
+    padding: 0 16px;
   }
 
   .btn-input {
@@ -663,11 +681,11 @@ input::placeholder {
   }
 
   .header {
-    height: 54px;
+    height: 64px;
   }
 
   .logo img {
-    width: 60px;
+    height: 60px;
   }
 
   .about-header {
@@ -688,7 +706,7 @@ input::placeholder {
   }
 
   .more-content {
-    padding: 0 0 40px 0;
+    padding: 38px 0 40px 0;
   }
 
   .more-logo {
@@ -776,7 +794,6 @@ input::placeholder {
 
   .more-content {
     display: block;
-    margin: 42px 0 0;
   }
 
   .more-text {
